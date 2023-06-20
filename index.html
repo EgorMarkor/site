@@ -5,16 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>Bootstrap 5 демонстрационная страница</title>
-    <!-- Подключение CSS файла bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <!-- Далее может идти подключение любого другого CSS файла сайта -->
     <link href="style.css" rel="stylesheet">
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <style>
     html, body {
-                width: 680px;
-                height: 882px;
                 margin: 0;
                 padding: 0;
             }
@@ -30,7 +26,7 @@
     }
      .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px; /* Ограничение ширины */
+  max-width: 300px;
   margin: auto;
   text-align: center;
   font-family: sans-serif;
@@ -162,8 +158,15 @@ img {
 </div>
 <script>
     let tg = window.Telegram.WebApp;
-    function buy(this) {
-    alert(this.parentNode)}
+    var buttons = document.querySelectorAll('button');
+    for(var but in buttons)
+    {
+        buttons[but].onclick = function(event)
+        {
+            var parentNode = event.target.parentNode; //div class="card"
+            alert(parentNode.querySelector('h3').innerHTML);
+        };
+    }
 </script>
 </body>
 </html>
