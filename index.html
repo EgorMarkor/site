@@ -93,7 +93,7 @@ img {
                     <!— Цена -->
                     <p class="price">От 10.500₽</p>
                     <!— Корзина -->
-                    <button>В корзину</button>
+                    <button onclick="buy(this)">Заказать</button>
                 </div>
             </section>
         </div>
@@ -107,7 +107,7 @@ img {
                     <!— Цена -->
                     <p class="price">От 9.900₽.</p>
                     <!— Корзина -->
-                    <button>В корзину</button>
+                    <button onclick="buy(this)">Заказать</button>
                 </div>
             </section>
         </div>
@@ -123,7 +123,7 @@ img {
                     <!— Цена -->
                     <p class="price">От 9.800₽</p>
                     <!— Корзина -->
-                    <button>В корзину</button>
+                    <button onclick="buy(this)">Заказать</button>
                 </div>
             </section>
         </div>
@@ -137,7 +137,7 @@ img {
                     <!— Цена -->
                     <p class="price">От 9.700₽.</p>
                     <!— Корзина -->
-                    <button>В корзину</button>
+                    <button onclick="buy(this)">Заказать</button>
                 </div>
             </section>
         </div>
@@ -153,11 +153,16 @@ img {
                     <!— Цена -->
                     <p class="price">От 10.300₽.</p>
                     <!— Корзина -->
-                    <button>В корзину</button>
+                    <button onclick="alert(this.parentNode.innerText">Заказать</button>
                 </div>
             </section>
         </div>
         </div>
 </div>
+<script>
+    let tg = window.Telegram.WebApp;
+    function buy(this) {
+    alert(this.parentNode)}
+</script>
 </body>
 </html>
