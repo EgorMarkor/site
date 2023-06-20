@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 5 демонстрационная страница</title>
+    <!-- Подключение CSS файла bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- Далее может идти подключение любого другого CSS файла сайта -->
+    <link href="style.css" rel="stylesheet">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+    body {background-color: #ededed;}
+    h1   {margin-left: 10%; padding: 10px; color: black;}
+    #tgbut {margin-left: 20%; border-radius: 100px; border: 0px; width: 100%; height: auto; margin-top: 15%;  font-family: nunito;}
+    #tgicon {width: 50px; height: 50px;}
+    #cont {margin-left: 10%;}
+     * {
+      padding: 0;
+      margin: 0;
+    }
+     .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px; /* Ограничение ширины */
+  margin: auto;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+img {
+
+  width: 100%;
+ .price {
+  font-size: 20px;
+}
+}
+ .card button {
+  border: none;
+  outline: 0;
+  padding: 10px;
+  color: #fff;
+  background-color: #5e9383;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+#sm {
+  max-width:100%;
+  width: 30%;
+  height: auto;
+}
+.row {padding: 10px;}
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <img id="sm" src="images/IMG_3352.PNG">
+        </div>
+        <div class="col">
+            <button id="tgbut" onclick="redirect();" type="button"><img id="tgicon"
+                                                                        src="https://cdn.icon-icons.com/icons2/2232/PNG/512/telegram_logo_icon_134592.png">
+                Наш Telegram-канал
+            </button>
+            <script>
+                function redirect(){window.location = 'https://t.me/+xNzapf9tDzJlOGRi';}
+
+            </script>
+        </div>
+    </div>
+</div>
+<h1>Каталог</h1>
+<div class="container" id="cont">
+    <div class="row">
+        <div class="col">
+            <section>
+                <div class="card">
+                    <!— Фотография -->
+                    <img src="images/IMG_3304.PNG" alt="Куртка джинсовая">
+                    <!— Название -->
+                    <h3>Nike Air Force 1 Low LX "Mica Green"</h3>
+                    <!— Цена -->
+                    <p class="price">От 10.500₽</p>
+                    <!— Корзина -->
+                    <button>В корзину</button>
+                </div>
+            </section>
+        </div>
+        <div class="col">
+            <section>
+                <div class="card">
+                    <!— Фотография -->
+                    <img src="images/IMG_3305.PNG" alt="Куртка джинсовая">
+                    <!— Название -->
+                    <h3>Nike Air Force 1 Low LX "Team Gold"</h3>
+                    <!— Цена -->
+                    <p class="price">От 9.900₽.</p>
+                    <!— Корзина -->
+                    <button>В корзину</button>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="row">
+                <div class="col">
+            <section>
+                <div class="card">
+                    <!— Фотография -->
+                    <img src="images/IMG_3357.PNG" alt="Куртка джинсовая">
+                    <!— Название -->
+                    <h3>Nike Air Force 1 Low Royal Blue"</h3>
+                    <!— Цена -->
+                    <p class="price">От 9.800₽</p>
+                    <!— Корзина -->
+                    <button>В корзину</button>
+                </div>
+            </section>
+        </div>
+        <div class="col">
+            <section>
+                <div class="card">
+                    <!— Фотография -->
+                    <img src="images/IMG_3356.PNG" alt="Куртка джинсовая">
+                    <!— Название -->
+                    <h3>Nike Air Force 1 Low "Malachite"</h3>
+                    <!— Цена -->
+                    <p class="price">От 9.700₽.</p>
+                    <!— Корзина -->
+                    <button>В корзину</button>
+                </div>
+            </section>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col">
+            <section>
+                <div class="card">
+                    <!— Фотография -->
+                    <img src="images/IMG_3355.PNG" alt="Куртка джинсовая">
+                    <!— Название -->
+                    <h3>Nike Air Force 1 Low "Multi-Swoosh"</h3>
+                    <!— Цена -->
+                    <p class="price">От 10.300₽.</p>
+                    <!— Корзина -->
+                    <button>В корзину</button>
+                </div>
+            </section>
+        </div>
+        </div>
+</div>
+</body>
+</html>
