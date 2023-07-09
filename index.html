@@ -148,24 +148,6 @@ input[type="radio"] {
 ol li{
   list-style-type: none;
 }
-@media screen and (max-width: 900px) {
-  .posts {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-
-@media screen and (max-width: 650px) {
-  .posts {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media screen and (max-width: 1500px) {
-  .posts {
-    grid-template-columns: repeat(5, 1fr);
-  }
-}
 
 @media screen and (max-width: 1920px) {
   .posts {
@@ -178,6 +160,19 @@ ol li{
     text-align: center;
     font-family: sans-serif;
 }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .posts {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+@media screen and (max-width: 650px) {
+  .posts {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
