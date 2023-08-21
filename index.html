@@ -198,7 +198,7 @@ ol li{
   }
 }
 input {
-  width: 70%;
+  width: 85%;
   height: 42px;
   padding-left: 15px;
   border-radius: 42px;
@@ -207,10 +207,18 @@ input {
   outline: none;
   position: relative;
   transition: .3s linear;
-  margin-left: 15%;
+  margin-left: 10%;
   margin-bottom: 10px;
 }
-
+#sear {
+      width: 42px;
+      height: 42px;
+      position: absolute;
+      content: "\f002";
+      border: 0px;
+      font-family: FontAwesome;
+      color: #324b4e;
+}
 
     </style>
 </head>
@@ -260,6 +268,7 @@ input {
     </li>
 </ol>
 <input type="text" id="inputSearch" placeholder="Поиск" title="Type in a category">
+<button id="sear"></button>
 <ol class="posts" id="list">
     <li class="post" data-category="Nike">
         <section>
