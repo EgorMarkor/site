@@ -210,16 +210,6 @@ input {
   margin-left: 10%;
   margin-bottom: 10px;
 }
-#sear {
-      width: 42px;
-      height: 42px;
-      position: absolute;
-      content: "\f002";
-      border: 0px;
-      font-family: FontAwesome;
-      color: #324b4e;
-}
-
     </style>
 </head>
 <body>
@@ -268,7 +258,6 @@ input {
     </li>
 </ol>
 <input type="text" id="inputSearch" placeholder="Поиск" title="Type in a category">
-<button id="sear"></button>
 <ol class="posts" id="list">
     <li class="post" data-category="Nike">
         <section>
@@ -8869,7 +8858,12 @@ input {
     }
   }
   document.addEventListener('keyup', search);
+  var keyboard = navigator.virtualKeyboard;
 
+document.addEventListener('click', function() {
+  // Скрытие виртуальной клавиатуры
+  keyboard.hide();
+});
 
 </script>
 </body>
