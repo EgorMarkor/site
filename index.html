@@ -40,6 +40,9 @@ img {
 }
 .price {
   font-size: 20px;
+  position: absolute;
+  bottom: 9%;
+  margin-left: 15%
 }
  .card button {
   border: none;
@@ -194,6 +197,19 @@ ol li{
     grid-template-columns: repeat(2, 1fr);
   }
 }
+input {
+  width: 70%;
+  height: 42px;
+  padding-left: 15px;
+  border-radius: 42px;
+  border: 2px solid #324b4e;
+  background: #E1E1E1;
+  outline: none;
+  position: relative;
+  transition: .3s linear;
+  margin-left: 15%;
+  margin-bottom: 10px;
+}
 
 
     </style>
@@ -243,7 +259,8 @@ ol li{
         <label for="LiNing">LiNing</label>
     </li>
 </ol>
-<ol class="posts">
+<input type="text" id="inputSearch" placeholder="Поиск" title="Type in a category">
+<ol class="posts" id="list">
     <li class="post" data-category="Nike">
         <section>
             <div class="card">
@@ -8826,6 +8843,23 @@ ol li{
             tg.sendData(JSON.stringify(date));
         };
     }
+    function search() {
+    let input = document.getElementById("inputSearch");
+    let filter = input.value.toUpperCase();
+    let ul = document.getElementById("list");
+    let li = ul.getElementsByTagName("li");
+
+    // Перебирайте все элементы списка и скрывайте те, которые не соответствуют поисковому запросу
+    for (let i = 0; i < li.length; i++) {
+        let a = li[i].getElementsByTagName("h3")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+  }
+  document.addEventListener('keyup', search);
 
 
 </script>
