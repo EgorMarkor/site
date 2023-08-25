@@ -52,7 +52,7 @@
   font-size: 20px;
   position: absolute;
   bottom: 7%;
-  margin-left: 19%
+  margin-left: 10%;
 }
  .card button {
   border: none;
@@ -103,6 +103,7 @@ input[type="radio"] {
 }
 
 .filters label {
+    font-size: 18px;
   display: block;
   padding: 0.5rem 1rem;
   margin-bottom: 0.25rem;
@@ -151,6 +152,9 @@ input[type="radio"] {
 [value="Puma"]:checked ~ .posts .post:not([data-category~="Puma"]),
 [value="LiNing"]:checked ~ .posts .post:not([data-category~="LiNing"]),
 [value="New Balance"]:checked ~ .posts .post:not([data-category~="NewBalance"]),
+[value="Timberland"]:checked ~ .posts .post:not([data-category~="Timberland"]),
+[value="Converse"]:checked ~ .posts .post:not([data-category~="Converse"]),
+[value="Другое"]:checked ~ .posts .post:not([data-category~="Другое"]),
 [value="Подборка"]:checked ~ .posts .post:not([data-category~="pod1"]),
 [value="Подборка2"]:checked ~ .posts .post:not([data-category~="pod2"]),
 [value="Подборка3"]:checked ~ .posts .post:not([data-category~="pod3"])
@@ -283,7 +287,9 @@ border-radius: 15px;
 <input type="radio" id="New Balance" name="categories" value="New Balance">
 <input type="radio" id="Puma" name="categories" value="Puma">
 <input type="radio" id="LiNing" name="categories" value="LiNing">
-<input type="radio" id="alli" name="categories" value="Всё" checked>
+<input type="radio" id="Converse" name="categories" value="Converse">
+<input type="radio" id="Timberland" name="categories" value="Timberland">
+<input type="radio" id="Other" name="categories" value="Другие">
 <input type="radio" id="pod1" name="categories" value="Подборка">
 <input type="radio" id="pod2" name="categories" value="Подборка2">
 <input type="radio" id="pod3" name="categories" value="Подборка3">
@@ -312,6 +318,15 @@ border-radius: 15px;
     </li>
     <li>
         <label for="LiNing">LiNing</label>
+    </li>
+    <li>
+        <label for="Converse">Converse</label>
+    </li>
+    <li>
+        <label for="Timberland">Timberland</label>
+    </li>
+    <li>
+        <label for="Other">другие</label>
     </li>
 </ol>
 <input type="text" id="inputSearch" placeholder="Поиск" title="Type in a category">
