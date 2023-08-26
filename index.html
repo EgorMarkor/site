@@ -21,19 +21,20 @@
     @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
     body {background-color: #ededed; padding: 5%;}
     h1   {padding: 10px; color: black;}
-    #tgbut {border-radius: 100px; border: 0px; width: 100%; height: auto; margin-top: 15%;  font-family: nunito;}
+    #tgbut {border-radius: 100px; border: 0px; width: 100%; height: auto; margin-top: 15%;}
     #tgicon {width: 50px; height: 50px;}
      * {
       padding: 0;
       margin: 0;
     }
      .card {
- overflow: hidden;
+
+  overflow: hidden;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
   height: 250px;
-  margin: auto;
   text-align: center;
+         margin-right: 10%;
   font-family: Nunito;
   border-radius: 10px;
 }
@@ -174,24 +175,6 @@ ol li{
 @media screen and (max-width: 1920px) {
   .posts {
     grid-template-columns: repeat(6, 1fr);
-    .card {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        max-width: 300px;
-        max-height: 300px;
-        height: 250px;
-        margin: auto;
-        text-align: center;
-        font-family: sans-serif;
-    }
-   html, body {
-                max-width: 1920;
-                max-height: 1920;
-                width: 1600;
-                height: 1000;
-                margin: 0;
-                padding: 0;
-            }
-  }
 }
 
 @media screen and (max-width: 900px) {
@@ -208,16 +191,16 @@ ol li{
 }
 input {
   margin-top: 0%;
-  width: 85%;
+  width: 83%;
   height: 42px;
-  padding-left: 15px;
+  padding-left: 5px;
   border-radius: 42px;
   border: 2px solid #324b4e;
   background: #E1E1E1;
   outline: none;
   position: relative;
   transition: .3s linear;
-  margin-left: 10%;
+    margin-left: 9%;
   margin-bottom: 20px;
 }
 .kata {
