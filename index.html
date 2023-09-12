@@ -262,12 +262,12 @@ label::before{
     z-index: -1;
 }
 .podborki {
-display: inline-block;
+display: flex;
 }
 
 .podborki img{
 margin-top: 0;
-margin-left: 0;
+margin-left: 10px;
 width: 100px;
 height: 100px;
 border-radius: 15px;
@@ -288,7 +288,6 @@ border-radius: 15px;
 <input type="radio" id="pod1" name="categories" value="Подборка">
 <input type="radio" id="pod2" name="categories" value="Подборка2">
 <input type="radio" id="pod3" name="categories" value="Подборка3">
-<input type="radio" id="pod4" name="categories" value="Подборка3">
 <ol class="filters">
     <li>
         <label for="Всё">Всё</label>
@@ -319,6 +318,13 @@ border-radius: 15px;
     </li>
     <li>
         <label for="Timberland">Timberland</label>
+    </li>
+</ol>
+<ol class="podborki">
+    <li>
+        <label for="pod1">
+            <img src="IMG_7034.PNG">
+        </label>
     </li>
 </ol>
 <input type="text" id="inputSearch" placeholder="Поиск" title="Type in a category">
@@ -13436,6 +13442,132 @@ border-radius: 15px;
                 <h3>Converse 1970s all star</h3>
                 <!— Цена -->
                 <p class="price">От 4.900 ₽</p>
+                <!— Корзина -->
+                <button onclick="buy(this)">Заказать</button>
+            </div>
+        </section>
+    </li>
+    <li class="post" data-category="pod1">
+        <section>
+            <div class="card">
+                <!— Фотография -->
+                <img src="images/photokurt (1).jpg" alt="Фотокарточка товара">
+                <!— Название -->
+                <h3>Куртка The North Face</h3>
+                <!— Цена -->
+                <p class="price">От 24.200 ₽</p>
+                <!— Корзина -->
+                <button onclick="buy(this)">Заказать</button>
+            </div>
+        </section>
+    </li>
+    <li class="post" data-category="Jordan pod1">
+        <section>
+            <div class="card">
+                <!— Фотография -->
+                <img src="images/photokurt (2).jpg" alt="Фотокарточка товара">
+                <!— Название -->
+                <h3>Куртка Jordan</h3>
+                <!— Цена -->
+                <p class="price">От 12.500 ₽</p>
+                <!— Корзина -->
+                <button onclick="buy(this)">Заказать</button>
+            </div>
+        </section>
+    </li>
+    <li class="post" data-category="Jordan pod1">
+        <section>
+            <div class="card">
+                <!— Фотография -->
+                <img src="images/photokurt (3).jpg" alt="Фотокарточка товара">
+                <!— Название -->
+                <h3>Куртка Jordan</h3>
+                <!— Цена -->
+                <p class="price">От 9.200 ₽</p>
+                <!— Корзина -->
+                <button onclick="buy(this)">Заказать</button>
+            </div>
+        </section>
+    </li>
+    <li class="post" data-category="NewBalance pod1">
+        <section>
+            <div class="card">
+                <!— Фотография -->
+                <img src="images/photokurt (4).jpg" alt="Фотокарточка товара">
+                <!— Название -->
+                <h3>Куртка New Balance</h3>
+                <!— Цена -->
+                <p class="price">От 14.000 ₽</p>
+                <!— Корзина -->
+                <button onclick="buy(this)">Заказать</button>
+            </div>
+        </section>
+    </li>
+    <li class="post" data-category="Adidas pod1">
+        <section>
+            <div class="card">
+                <!— Фотография -->
+                <img src="images/photokurt (5).jpg" alt="Фотокарточка товара">
+                <!— Название -->
+                <h3>Куртка Adidas ACG</h3>
+                <!— Цена -->
+                <p class="price">От 26.700 ₽</p>
+                <!— Корзина -->
+                <button onclick="buy(this)">Заказать</button>
+            </div>
+        </section>
+    </li>
+    <li class="post" data-category="Adidas pod1">
+        <section>
+            <div class="card">
+                <!— Фотография -->
+                <img src="images/photokurt (6).jpg" alt="Фотокарточка товара">
+                <!— Название -->
+                <h3>Куртка Adidas W 3St Puff Jkt</h3>
+                <!— Цена -->
+                <p class="price">От 14.000 ₽</p>
+                <!— Корзина -->
+                <button onclick="buy(this)">Заказать</button>
+            </div>
+        </section>
+    </li>
+    <li class="post" data-category="Puma pod1">
+        <section>
+            <div class="card">
+                <!— Фотография -->
+                <img src="images/photokurt (7).jpg" alt="Фотокарточка товара">
+                <!— Название -->
+                <h3>Куртка Puma Volume Down Jacket</h3>
+                <!— Цена -->
+                <p class="price">От 13.900 ₽</p>
+                <!— Корзина -->
+                <button onclick="buy(this)">Заказать</button>
+            </div>
+        </section>
+    </li>
+    <li class="post" data-category="Converse pod1">
+        <section>
+            <div class="card">
+                <!— Фотография -->
+                <img src="images/photokurt (8).jpg" alt="Фотокарточка товара">
+                <!— Название -->
+                <h3>Куртка Converse FW22</h3>
+                <!— Цена -->
+                <p class="price">От 13.0п00 ₽</p>
+                <!— Корзина -->
+                <button onclick="buy(this)">Заказать</button>
+            </div>
+        </section>
+    </li>
+    <li class="post" data-category="Nike pod1">
+        <section>
+            <div class="card">
+                <!— Фотография -->
+                <img src="images/photokurt (9).jpg" alt="Фотокарточка товара">
+                <!— Название -->
+                <h3>Куртка Nike As М Nsw Tf Rpl City Puff Jkt</h3>
+                <!— Цена -->
+                <p class="price">От 14.500 ₽ ₽</p>
                 <!— Корзина -->
                 <button onclick="buy(this)">Заказать</button>
             </div>
